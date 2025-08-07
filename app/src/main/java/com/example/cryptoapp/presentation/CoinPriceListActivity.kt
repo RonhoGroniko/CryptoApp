@@ -3,14 +3,14 @@ package com.example.cryptoapp.presentation
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.example.cryptoapp.databinding.ActivityCoinPrceListBinding
+import com.example.cryptoapp.databinding.ActivityCoinPriceListBinding
 import com.example.cryptoapp.domain.entity.CoinInfo
 import com.example.cryptoapp.presentation.adapters.CoinInfoAdapter
 
 class CoinPriceListActivity : AppCompatActivity() {
 
     private val binding by lazy {
-        ActivityCoinPrceListBinding.inflate(layoutInflater)
+        ActivityCoinPriceListBinding.inflate(layoutInflater)
     }
     private val viewModel by lazy {
         ViewModelProvider(this)[CoinViewModel::class.java]
